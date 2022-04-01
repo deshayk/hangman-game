@@ -7,6 +7,8 @@ LinkedIn: https://www.linkedin.com/in/deshayk/
 
 import random # gives you access to the random module, needed to choose a random word from the word-list python file 
 from wordList import words # imports the words array file from the same directory as the wordList.py file
+from hangmanVisual import hangmanLivesVisual #imports the hangmanLivesVisual array from the hangmanVisual.py file
+import string #imports the string module
 
 def getWord(words):
   word = random.choice(words) #randomly chooses a word from the words array
@@ -25,4 +27,28 @@ def hangmanGame():
     print("Lives Remaining: " + str(lives)) #prints the number of lives remaining
     
     wordList = [letter if letter in usedLetters else "-" for letter in word] #creates a list of the letters in the word, with the letters in the word replaced with dashes if they have not been used yet
-    print(" ".join(wordList)) #prints the word with dashes in place of the letters that have not been used yet
+    print(hangmanLivesVisual[lives]) #prints the hangman lives visual
+    print("Current Word: " + " ".join(wordList)) #prints the current word with dashes in place of the letters not yet used
+    
+    userLetter = input("\nGuess a letter: ").upper() #asks the user to enter a letter (returns in uppercase)
+    if usedLetters in alphabet - usedLetters:
+      usedLetters.add(userLetter) #adds the letter to the used letters set
+      if userLetter in wordLetters:
+        wordLetters.remove(userLetter) #removes the letter from the word letters set
+        print("\nCorrect!")
+      else:
+        lives -= 1 #subtracts a life for incorrect guess
+        print("\nIncorrect!")
+    elif userLetter in usedLetters:
+      print("\nYou have already guessed that letter! Guess a different one.") #tells the user they have already guessed that letter
+    else:
+      print("\nThat is not a letter! Guess a different one.") #prints an error message if the user enters a letter that is not in the alphabet
+      
+  if lives == 0:
+    print(hangmanLivesVisual[lives]) #prints the hangman lives visual
+    print("Game over. You're dead. The word was: " + word) #prints the word that the user was trying to guess
+  else:
+    print("You win! The word was: " + word) #prints the word that the user guessed correctly
+    
+if __name__ == "__main__":
+  hangmanGame()
