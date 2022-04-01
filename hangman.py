@@ -18,7 +18,7 @@ def hangmanGame():
   alphabet = set(string.ascii_uppercase) #creates a set of the letters in the alphabet
   usedLetters = set() #creates a set of the letters already used
   
-  lives = 6 #sets the number of lives to 6 (the head, the body, the left arm, the right arm, the left leg, and the right leg)
+  lives = 7 #sets the number of lives to 7 (includes the head, the body, the left arm, the right arm, the left leg, and the right leg)
   
   while len(wordLetters) > 0 and lives > 0: #while the word has letters and the user still has lives
     print("\n") #prints a new line
