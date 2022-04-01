@@ -21,12 +21,18 @@ Run Command Prompt Application
 ### Step 2: Check to see if Python is installed on your terminal
 Type "python --version" in your terminal.
 The version of Python you have should be printed on the screen if it is installed.
+![Check Python Installation](/instruction-img/check-python-installation.png)
 
 #### Step 2a: Install Python
 Go to this website: https://www.python.org/downloads/ 
-Download Python Installer
-Allow Python to make changes
+![Python Download Page](/instruction-img/python-downloads%20page.png)
 
+Download Python Installer
+![Python Installer](/instruction-img/install-python-1.png)
+
+Allow Python to make changes. Once completed, you should see the screen below.
+
+![Python Commands](/instruction-img/install-python-2.png)
 
 ### Step 3: Download Program File
 Choose a folder to host the file
@@ -36,4 +42,5 @@ git clone --> (ssh link) git@github.com:deshayk/hangman-game.git
 ### Step 4: Run Python Game
 cd into file ----> cd hangman-game
 Enter the following command to run the game file ----> python3 hangman.py
+![Python Commands](/instruction-img/run-hangman-program.png)
 Enjoy the game
