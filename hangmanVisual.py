@@ -1,4 +1,4 @@
-hanganLivesVisual = {
+hangmanLivesVisual = {
         0: """
                 ___________
                | /        | 
