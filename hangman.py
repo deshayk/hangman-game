@@ -31,7 +31,7 @@ def hangmanGame():
     print("Current Word: " + " ".join(wordList)) #prints the current word with dashes in place of the letters not yet used
     
     userLetter = input("\nGuess a letter: ").upper() #asks the user to enter a letter (returns in uppercase)
-    if usedLetters in alphabet - usedLetters:
+    if userLetter in alphabet - usedLetters:
       usedLetters.add(userLetter) #adds the letter to the used letters set
       if userLetter in wordLetters:
         wordLetters.remove(userLetter) #removes the letter from the word letters set
