@@ -1,2 +1,2 @@
 import random # gives you access to the random module, needed to choose a random word from the word-list python file 
-from wordList import words # imports the word_list file from the same directory as the hangman.py file
+from wordList import words # imports the words array file from the same directory as the wordList.py file
