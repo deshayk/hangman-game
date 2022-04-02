@@ -5,17 +5,17 @@ Medium: https://www.medium.com/@deshayk
 LinkedIn: https://www.linkedin.com/in/deshayk/
 """
 
-import random # gives you access to the random module, needed to choose a random word from the wordList python file 
-from wordList import words # imports the words array file from the same directory as the wordList.py file
-from hangmanVisual import hangmanLivesVisual #imports the hangmanLivesVisual array from the hangmanVisual.py file
+import random # gives you access to the random module, needed to choose a random word from wordList.py
+from wordList import words # imports the words list from the wordList.py file
+from hangmanVisual import hangmanLivesVisual #imports the hangmanLivesVisual list from hangmanVisual.py
 import string #imports the string module
 
 def getWord(words):
-  word = random.choice(words) #randomly chooses a word from the words array
+  word = random.choice(words) #randomly chooses a word from the words list
   return word.upper() #returns the word in uppercase to improve readability and consistency
 
 def hangmanGame():
-  word = getWord(words) #gets a random word from the words array
+  word = getWord(words) #gets a random word from the words list
   wordLetters = set(word) #creates a set of the letters in the word
   alphabet = set(string.ascii_uppercase) #creates a set of the letters in the alphabet
   usedLetters = set() #creates a set of the letters already used
