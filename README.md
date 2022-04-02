@@ -17,6 +17,7 @@ In order to play this game, you need to use your terminal. If you aren't used to
 Click on the magnifying glass that allows you to search your computer for applications.
 Type "terminal" and an application named "Command Prompt" should show.
 Run Command Prompt Application
+
 ![Window Terminal](/instruction-img/find-terminal-app.jpg)
 
 ### Step 2: Check to see if Python is installed on your terminal
@@ -26,13 +27,16 @@ python --version
 ```
 
 The version of Python you have should be printed on the screen if it is installed.
+
 ![Check Python Installation](/instruction-img/check-python-installation.png)
 
 #### Step 2a: Install Python
 If Python is not installed on your computer, download the installer from the [official Python website](https://www.python.org/downloads/).
+
 ![Python Download Page](/instruction-img/python-downloads%20page.png)
 
 Download Python Installer
+
 ![Python Installer](/instruction-img/install-python-1.png)
 
 Make sure you allow Python to make changes to your computer. Once completed, you should see the screen below.
@@ -41,6 +45,7 @@ Make sure you allow Python to make changes to your computer. Once completed, you
 
 ### Step 3: Get Hangman Game Program File
 In the [hangman-game](https://github.com/deshayk/hangman-game) GitHub repository, click the green "Code" button and copy either the HTTPS (web URL) or SSH (password protected) link.
+
 ![GitHub Link Copy](/instruction-img/game-download.png)
 
 ### Step 4: Download Hangman Game
@@ -57,6 +62,7 @@ Clone the repository on your computer using the following command:
 git clone (ssh link or HTTPs)
 ``` 
 After you successfully cloned the repository, you should see a hangman folder on in the location you cloned the repository, in this case, you see the folder on your Desktop because it is saved in the Desktop folder.
+
 ![Git Clone](/instruction-img/git-clone.png)
 
 ### Step 4: Run Python Game
