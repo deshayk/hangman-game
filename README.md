@@ -7,7 +7,7 @@ Contributors: DeShay K.
 Turning a classic paper and pencil game into one that you can play on your computer. Can you save the poor person from a grim fate?
 
 # Project Description
-The aim of this project is two fold: have a better understanding of the Python programming language and test that skill through application development.
+The aim of this project is two fold: have a better understanding of the Python programming language and test that skill through application development. If you want a walkthrough of key concepts covered in this python program, make sure you read the [Medium article](https://medium.com/@deshayk/learn-by-doing-python-hangman-game-d24eee10f5a5) I wrote. Remember, friends, do or do not; there is no try!
 
 # Installation Guide
 In order to play this game, you need to use your terminal. If you aren't used to using your terminal, here is a step-by-step guide:
