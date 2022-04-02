@@ -35,16 +35,16 @@ def hangmanGame():
       usedLetters.add(userLetter) #adds the letter to the used letters set
       if userLetter in wordLetters:
         wordLetters.remove(userLetter) #removes the letter from the word letters set
-        print("\nCorrect!")
+        print("\nNice Guess!")
       else:
         lives -= 1 #subtracts a life for incorrect guess
-        print("\nIncorrect!")
+        print("\nAhh, you lost a life. Try again!")
     elif userLetter in usedLetters:
       print("\nYou have already guessed that letter! Guess a different one.") #tells the user they have already guessed that letter
     else:
       print("\nThat is not a letter! Guess a different one.") #prints an error message if the user enters a letter that is not in the alphabet
       
-  if lives == 0:
+  if lives == 0: #marks the end of the game
     print(hangmanLivesVisual[lives]) #prints the hangman lives visual
     print("Game over. You're dead. The word was: " + word) #prints the word that the user was trying to guess
   else:
