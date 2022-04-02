@@ -17,20 +17,25 @@ In order to play this game, you need to use your terminal. If you aren't used to
 Click on the magnifying glass that allows you to search your computer for applications.
 Type "terminal" and an application named "Command Prompt" should show.
 Run Command Prompt Application
+![Window Terminal](/instruction-img/find-terminal-app.jpg)
 
 ### Step 2: Check to see if Python is installed on your terminal
-Type "python --version" in your terminal.
+Type the following command in your terminal to see if Python is already installed:
+```
+python --version
+```
+
 The version of Python you have should be printed on the screen if it is installed.
 ![Check Python Installation](/instruction-img/check-python-installation.png)
 
 #### Step 2a: Install Python
-Go to this website: https://www.python.org/downloads/ 
+If Python is not installed on your computer, download the installer from the [official Python website](https://www.python.org/downloads/).
 ![Python Download Page](/instruction-img/python-downloads%20page.png)
 
 Download Python Installer
 ![Python Installer](/instruction-img/install-python-1.png)
 
-Allow Python to make changes. Once completed, you should see the screen below.
+Make sure you allow Python to make changes to your computer. Once completed, you should see the screen below.
 
 ![Python Commands](/instruction-img/install-python-2.png)
 
