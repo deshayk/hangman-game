@@ -39,12 +39,25 @@ Make sure you allow Python to make changes to your computer. Once completed, you
 
 ![Python Commands](/instruction-img/install-python-2.png)
 
-### Step 3: Download Program File
-Choose a folder to host the file (I host mine in a folder called "projects" in my "Documents" folder)
+### Step 3: Get Hangman Game Program File
+In the [hangman-game](https://github.com/deshayk/hangman-game) GitHub repository, click the green "Code" button and copy either the HTTPS (web URL) or SSH (password protected) link.
+![GitHub Link Copy](/instruction-img/game-download.png)
+
+### Step 4: Download Hangman Game
+Open your terminal.
+Decide what folder you're going to use to host the folder (for this tutorial, I am going to save the "hangman-game" folder in my "Desktop" folder).
+Change directories into the folder you are going to save the hangman game in using the following command:
+```
+cd Desktop
+```
+![Desktop Folder](/instruction-img/cd-desktop.png)
+
 Clone the repository on your computer using the following command:
 ```
-git clone (ssh link) git@github.com:deshayk/hangman-game.git
+git clone (ssh link or HTTPs)
 ``` 
+After you successfully cloned the repository, you should see a hangman folder on in the location you cloned the repository, in this case, you see the folder on your Desktop because it is saved in the Desktop folder.
+![Git Clone](/instruction-img/git-clone.png)
 
 ### Step 4: Run Python Game
 Once you have successfully cloned the file, change directories to enter the "hangman-game" folder using the following command: 
@@ -61,7 +74,7 @@ Once you are in the programFiles folder, enter the following command to run the 
 ```
 python hangman.py
 ```
-![Python Commands](/instruction-img/run-hangman-program.png)
+![Enter Hangman Game](/instruction-img/get-to-hangman.png)
 
 You should now be able to play the hangman game as many times as you like. Once the game is over, run the following command to play another round:
 ```
