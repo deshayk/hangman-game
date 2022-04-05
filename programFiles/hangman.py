@@ -1,5 +1,5 @@
 """
-Learn Python the Fun Way - Hangman Game by DeShay K.
+Learn by Doing - Hangman Game by DeShay K.
 Github: https://github.com/deshayk
 Medium: https://www.medium.com/@deshayk
 LinkedIn: https://www.linkedin.com/in/deshayk/
