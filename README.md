@@ -1,4 +1,7 @@
 # Python Hangman 
+
+![Hangman](/Hangman.png)
+
 Game Name: Hangman
 Version: 1.0
 Contributors: DeShay K.
